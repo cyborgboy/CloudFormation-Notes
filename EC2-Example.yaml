@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: cf-ec2-deploy
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId:  ami-xxxxxxxxxxxxxx # ImageID valid only in us-east-1 region
+      InstanceType: t2.micro
